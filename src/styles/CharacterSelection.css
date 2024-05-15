@@ -1,0 +1,50 @@
+.character-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .character-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px);
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .character-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .character-card {
+      width: calc(100% - 20px);
+    }
+  }
+  
+  button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #804eff;
+    border: 2px solid #7012f4;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #29a5fe;
+    border-color: #1ce4fa;
+  }
+  

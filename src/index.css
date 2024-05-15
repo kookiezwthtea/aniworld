@@ -1,0 +1,284 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: #402454;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F7F7F7;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+text-align: center;
+color: #844caf;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
+
+h4{
+  text-align: center;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
+
+.App{
+  position: relative;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.heading {
+  text-align: center;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+#videos{
+  position: relative;
+  height: 85vh;
+  width: 100vw;
+  margin: auto;
+  align-self: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.vid{
+  position: relative;
+  background-color:black;
+  height: 95%;
+  width: 95%;
+  border-width: 1px;
+  border-color: #38373A;
+  border-style: solid;
+}
+
+.controls{
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: -20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  align-items: center;
+  justify-items: center;
+  z-index: 1;
+  width: 500px;
+  max-width: 60vw;
+}
+
+.controls p{
+  padding: 10px;
+  cursor: pointer;
+  background: #38373A;
+  color: #F7F7F7;
+  border-width: 1px;
+  border-color: #F7F7F7;
+  border-style: solid;
+}
+
+.controls p.on{
+  background: #F7F7F7;
+  color: #38373A;
+  border-width: 1px;
+  border-color: #38373A;
+  border-style: solid;
+}
+
+.join{
+  position: absolute;
+  z-index: 1;
+  width: 30vw;
+  height: fit-content;
+  height: -moz-max-content;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 75vw;
+}
+
+.join  input{
+  padding: 15px;
+  font-size: 1rem;
+  border-width: 1px;
+  border-color: #38373A;
+  border-style: solid;
+  width: 80%;
+  display: block;
+  margin:  50px auto;
+}
+
+.join  button{
+  min-width: 200px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #38373A;
+  color: #F7F7F7;
+  border-width: 1px;
+  border-color: #F7F7F7;
+  border-style: solid;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.description-card{
+  margin: auto;
+  padding: 2em 5em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100% - 5em;
+  text-align: center;
+
+}
+
+
+/* CharacterCard Selected Page */
+.character-selected {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.character-selected h2 {
+  font-size: 1.75rem;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.character-selected img {
+  height: 500px; 
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.character-selected img:hover {
+  transform: scale(1.20);
+}
+
+.character-selected .description-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #804eff;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.character-selected .description-box p {
+  font-size: 1.125rem;
+  color: #555;
+  margin: 0;
+}
+
+.character-selected .list-group-item {
+  border: none;
+  padding: 0.5rem 0;
+}
+
+.character-selected .btn-primary,
+.character-selected .btn-outline-secondary {
+  margin: 0.5rem;
+}
+
+.character-selected .progress {
+  
+  height: 1.5rem;
+  margin-bottom: 1rem;
+  
+}
+
+.character-selected .progress-bar {
+  border-radius: 5px;
+  background-color: rgb(245, 113, 234);
+}
+
+
+
+
+/* NavBar*/
+.btn {
+  padding: .45rem 1.5rem .35rem;
+}
+
+.gradient-custom {
+  background: #c471f5;
+
+  background: -webkit-linear-gradient(to right, rgb(245, 113, 234), #804eff);
+
+  background: linear-gradient(to right, rgb(245, 113, 234), #804eff)
+}
+
+
+
+
+/*Messages Page*/
+
+.messages-page {
+  background: linear-gradient(to bottom right, #804eff, #9b59b6); 
+  margin-top: 2em;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.page-title {
+  color: #fff;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-text {
+  color: #333;
+}
+
+
+
+
+/*Feeding Interface*/
+.character-with-accessory {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+
+/*Humor Page*/
+
+.humor-bg-img{
+  background-image: url('humor-bg.jpg');
+  background-size: cover;
+}
+
+.humor-page { 
+  padding-top:3em;
+  border-radius: 10px;
+}
+
+.humor-card{
+  background-color: #e1ff01;
+}
+
